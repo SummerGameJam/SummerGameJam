@@ -1,5 +1,5 @@
 int main()
 {
-    std:: << "Testing  C++ files"
-    std:: << "Snowb"
+    std::cout << "Testing  C++ files"
+    std::cout << "Snowb"
 }
