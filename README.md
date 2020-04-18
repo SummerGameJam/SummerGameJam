@@ -5,11 +5,12 @@ We are  team of beginner-amateur game developers with the intent of using the ma
 
 Current Team:
 
-Wallace (Adam) = Animation, 3D Art, Generalist
-SnowB = Programmer, Engine Dev
-Ryans = Programmer, Engine Dev
-Cameron = Programmer
-Reece = Programmer
-Pixie = Programmer
-Oscar = Design, Engine Dev, Level Design, Texture artist
-Kral = Design
+Wallace (Adam) = Animation, 3D Art, Generalist <br>
+SnowB = Programmer, Engine Dev <br>
+Ryans = Programmer, Engine Dev <br>
+Cameron = Programmer <br>
+Reece = Programmer <br>
+Pixie = Programmer <br>
+Oscar = Design, Engine Dev, Level Design, Texture artist <br>
+Kral = Design <br>
+ 
