@@ -2,8 +2,22 @@
 #include <string> 
 #include <fstream>
 
-int main() {
+void SongType() {
+    if (SongType == "A" ) { //need to globa define songtype??? Same with below? 
+std::ifstream RockSongs;
+    };
 
+    if (SongType == "B") {
+std::ifstream PopSongs;
+    }
+}
+
+int main() {
+		/*
+		all log in sytem variables are defined here for some reason
+		dunno what i was thinking 
+		but cba changing, maybe later
+		*/
     std::string welcome;
     
     std::string username;
@@ -70,5 +84,45 @@ int main() {
             };
         };
     };
-    std::cout << "Testing 123";
+
+    std::cout << "Welcome!\n";
+    std::string gameinfo;
+    std::cout << "Are you ready to play the game? y/n: \n";
+    std::cin >> gameinfo;
+
+    if (gameinfo == "n") {
+        std::cout << "Ok, we are here when you are ready :)\n";
+				//call function to exit here
+		}
+    else {
+        std::cout << "Lets go and have some fun :)\n";
+    };
+
+    std::string instructions;
+    std::cout << "Do you want to hear the instructions? y/n: \n";
+    std::cin >> instructions;
+    if (instructions == "y") {
+        std::cout << "...Thease are the instructions...";
+		}
+    else {
+        std::cout << "Thats fine, we shall continue";
+    };
+
+    std::cout << "You can pick what type of songs you wish to be played";
+    std::cout << "A = Rock Songs";
+    std::cout << "B = Pop Songs";
+    std::string SongType;
+    std::cout << "Pleae enter what group you want - A,B...: \n";
+    std::cin >> SongType;
+
+		//call the song type function
+		// need to define counter and points
+    counter = 0; //need ;?
+    points = 0; //need ;?
+
+    while (counter < 5) { //need to define counter outside of it???
+		//call the song type function 
+        //Play a random song from the folder with the correct song type 
+    }
+
 };

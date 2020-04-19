@@ -60,3 +60,4 @@ int main() {
 
 //thanks pixie :)
 //written at two in morning. - IK its shit ;) 
+//first ever C++ thing
