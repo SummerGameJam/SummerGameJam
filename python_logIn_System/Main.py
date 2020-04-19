@@ -1,3 +1,6 @@
+import getpass
+#^ this will hide the password when typing it in
+
 print("Login system")
 
 welcome = input("Do you have an account already? y/n: ")
@@ -9,8 +12,8 @@ else:
 	if welcome == "n":
 			while True:
 					username = input("Enter a username: ")
-					password = input("Enter a password: ")
-					password1 = input("Please confirm your password: ")
+					password = getpass.getpass("Enter a password: ")
+					password1 = getpass.getpass("Please confirm your password: ")
 					if password == password1:
 							file = open(username + ".txt", "w")
 							file.write(username + ":" + password)
@@ -26,8 +29,8 @@ else:
 if welcome == "y":
     while True:
         print("Welcome back!")
-        login1 = input("Login: ")
-        login2 = input("Password: ")
+        login1 = getpass.getpass("Login: ")
+        login2 = getpass.getpass("Password: ")
         file = open(login1 + ".txt", "r")
         data = file.readline()
         file.close()
