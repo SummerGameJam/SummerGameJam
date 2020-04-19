@@ -111,8 +111,7 @@ int main() {
     std::cout << "Pleae enter what group you want - A,B...: \n";
     std::cin >> SongType;
 
-		//call the song type function
-		int 
+		//call the song type function 
     counter = 0
     points = 0
     while (counter < 5) {
