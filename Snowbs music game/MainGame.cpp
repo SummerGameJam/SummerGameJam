@@ -2,6 +2,16 @@
 #include <string> 
 #include <fstream>
 
+void SongType() {
+    if (SongType == "A") {
+std::ifstream RockSongs;
+    };
+
+    if (SongType == "B") {
+std::ifstream PopSongs;
+    }
+}
+
 int main() {
 
     std::string welcome;
@@ -70,5 +80,44 @@ int main() {
             };
         };
     };
-    std::cout << "Testing 123";
+
+    std::cout << "Welcome!\n";
+    std::string gameinfo;
+    std::cout << "Are you ready to play the game? y/n: \n";
+    std::cin >> gameinfo;
+
+    if (gameinfo == "n") {
+        std::cout << "Ok, we are here when you are ready :)\n";
+				//call function to exit here
+		}
+    else {
+        std::string "Lets go and have some fun :)\n";
+    };
+
+    std::string instructions;
+    std::cout << "Do you want to hear the instructions? y/n: \n";
+    std::cin >> instructions;
+    if (instructions == "y") {
+        std::string "...Thease are the instructions...";
+		}
+    else {
+        std::string "Thats fine, we shall continue";
+    };
+
+    std::cout << "You can pick what type of songs you wish to be played";
+    std::cout << "A = Rock Songs";
+    std::cout << "B = Pop Songs";
+    std::string SongType;
+    std::cout << "Pleae enter what group you want - A,B...: \n";
+    std::cin >> SongType;
+
+		//call the song type function
+		int 
+    counter = 0
+    points = 0
+    while (counter < 5) {
+		//call the song type function 
+        //Play a random song from the folder with the correct song type 
+    }
+
 };
