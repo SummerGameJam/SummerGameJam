@@ -14,86 +14,81 @@ void SongTypeFunc(std::string songType) {
 };
 
 int main() {
-		/*
-		all log in sytem variables are defined here for some reason
-		dunno what i was thinking 
-		but cba changing, maybe later
-		*/
-    std::string welcome;
-    
-    std::string username;
-    std::string password;
-    std::string password1;
 
-    bool correct = false;
-
-    std::ifstream ifile;
-
-    std::string login1;
-    std::string login2;
-		std::string data;
-		
+		bool correct = false;
 		bool real = true;
 
-    int x;
-    int sum;
-    sum = 0;
+		int x;
+		int sum;
+		sum = 0;
 
-    std::cout << "Password sytem\n";
+		std::cout << "Welcome to this music game!\n";
 
-    std::cout << "Do you have an account already? y/n: ";
-    std::cin >> welcome; 
-    if (welcome == "n" ) {
-        while (correct == false) {
-          std::cout << "Enter a username: ";
-          std::cin >> username;
+		std::string welcome;
+		std::cout << "Do you have an account already? y/n: ";
+		std::cin >> welcome;
 
-          std::cout << "Enter a password: ";
-          std::cin >> password;
+		if ((welcome == "n") || (welcome == "y")) {
 
-          std::cout << "Enter your password again: ";
-          std::cin >> password1;
+			if (welcome == "n") {
 
-          if (password == password1) {
-            std::ofstream ofile;
-            ofile.open (username + ".txt");
-            ofile << (username + ":" + password);
-            ofile.close();
-            correct = true;
-          }
-          else {
-            std::cout << "Your passwords do not match, please try again\n";
-						correct = false;
-        }
-    }
-  }
+					while (correct == false) {
+
+						std::string username;
+						std::cout << "Enter a username: ";
+						std::cin >> username;
+
+						std::string password;
+						std::cout << "Enter a password: ";
+						std::cin >> password;
+
+						std::string password1;
+						std::cout << "Enter your password again: ";
+						std::cin >> password1;
+
+						if (password == password1) {
+							std::ofstream ofile;
+							ofile.open (username + ".txt");
+							ofile << (username + ":" + password);
+							ofile.close();
+							correct = true;
+						}
+						else {
+							std::cout << "Your passwords do not match, please try again\n";
+						};
+					}
+			}
+			if (welcome == "y") {
+					
+					while (real == true) {
+
+							std::string login1;
+							std::cout << "Please enter your username: \n";
+							std::cin >> login1;
+
+							std::string login2;
+							std::cout << "Please enter your password: \n";
+							std::cin >> login2;
+
+							std::string data;
+							std::ifstream ifile;
+							ifile.open (login1 + ".txt");
+							ifile >> data;
+
+							if (ifile || data == login1 + ":" + login2){
+								ifile.close();
+							}
+							else {
+									std::cout << "Your username or password is invalid, please try again\n";	
+							};
+					};
+			}
+
+			std::cout << "Welcome!\n";
+		}
 		else {
-			std::cout << "Please only enter a lowercase 'y' or 'n', the proggram will now close";
 			std::terminate();
-		};
-    if (welcome == "y") {
-        
-        while (real == true) {
-            std::cout << "Please enter your username: \n";
-            std::cin >> login1;
-            std::cout << "Please enter your password: \n";
-            std::cin >> login2;
-            ifile.open (login1 + ".txt");
-            ifile >> data;
-            if (ifile || data == login1 + ":" + login2){
-              std::cout << "Welcome back\n";
-              ifile.close();
-              real = false;
-            }
-            else {
-                std::cout << "Your username or password is invalid, please try again\n";	
-            };
-        };
-    }
-		else {
-			std::cout << "Please only enter a lowercase 'y' or 'n', the proggram will now close";
-			std::terminate();
-		};
+		}
 
     std::cout << "Welcome!\n";
     std::string gameinfo;
