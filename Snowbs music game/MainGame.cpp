@@ -137,7 +137,6 @@ int main() {
 			SongTypeFunc(songType);
       counter += 1; //increase counter by one
 			
-
 			if (songType == "A") { 
       	SoundLocation = "E:\Documents\GitHub\SummerGameJam\Snowbs music game\Files\Audio\RockSongs"; //file directory of RockSongs folder;
     	}
