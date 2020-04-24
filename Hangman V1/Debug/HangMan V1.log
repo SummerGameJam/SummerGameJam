@@ -1,0 +1,5 @@
+﻿  main.cpp
+E:\Documents\GitHub\SummerGameJam\HangMan V1\main.cpp(109,23): warning C4018: '<': signed/unsigned mismatch
+E:\Documents\GitHub\SummerGameJam\HangMan V1\main.cpp(146,23): warning C4018: '<': signed/unsigned mismatch
+E:\Documents\GitHub\SummerGameJam\HangMan V1\main.cpp(155,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  HangMan V1.vcxproj -> E:\Documents\GitHub\SummerGameJam\HangMan V1\Debug\HangMan V1.exe

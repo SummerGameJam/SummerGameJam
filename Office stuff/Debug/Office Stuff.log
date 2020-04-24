@@ -1,0 +1,2 @@
+﻿Office 2.0.obj : error LNK2005: _main already defined in Office 1.0.obj
+E:\Documents\GitHub\SummerGameJam\Office Stuff\Debug\Office Stuff.exe : fatal error LNK1169: one or more multiply defined symbols found
